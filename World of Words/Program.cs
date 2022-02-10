@@ -17,19 +17,20 @@ namespace World_of_Words
                 Console.WriteLine("Hello! Please choose level ;)\nEasy - 4 words and 10 chances (E) " +
                                   "\nHard - 8 words and 15 chances (H)\n\n");
                 choice = Console.ReadLine();
+                string choiceUpper = choice.ToUpper();
 
-                if (choice == "e" || choice == "E")
+                if (choiceUpper == "E")
                 {
                     Easy easy = new Easy();
                 }
 
-                else if (choice == "h" || choice == "H")
+                else if (choiceUpper == "H")
                 {
                     Hard hard = new Hard();
                 }
 
                 else
-                    Console.WriteLine("Wrong choice. Please select 'l' or ' h'");
+                    Console.WriteLine("Wrong choice. Please select 'e' or ' h'");
             }
 
             else if (!File.Exists(fileName))

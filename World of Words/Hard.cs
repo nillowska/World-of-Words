@@ -12,13 +12,16 @@ namespace World_of_Words
             Console.Clear();
             DisplayInterface headerPhoto = new DisplayInterface();
 
-            string[] allWords = File.ReadAllLines(@"Words.txt");
+            Random wordIndex = new Random();
 
-            Random randWord = new Random();
+            string[] allWords = File.ReadAllLines(@"Words.txt");
 
             for (int i = 0; i < 8; i++)
             {
-                Console.WriteLine(allWords[randWord.Next(allWords.Length)]);
+                int wordNumber = wordIndex.Next(0, allWords.Length);
+                string word = allWords[wordNumber];
+
+                Console.WriteLine(wordNumber + word);
 
             }
         }
