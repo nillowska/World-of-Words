@@ -4,9 +4,9 @@ using System.Text;
 
 namespace World_of_Words
 {
-    public class HeaderPhoto
+    public class DisplayInterface
     {
-        public HeaderPhoto()
+        public DisplayInterface()
             {
             Console.WriteLine(@"
  __          __        _     _             __       __          __           _ 

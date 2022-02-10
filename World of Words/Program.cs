@@ -7,23 +7,23 @@ namespace World_of_Words
     {
         static void Main(string[] args)
         {
-            HeaderPhoto headerPhoto = new HeaderPhoto();
+            DisplayInterface headerPhoto = new DisplayInterface();
 
             string choice;
             string fileName = @"Words.txt";
 
             if (File.Exists(fileName))
             {
-                Console.WriteLine("Hello! Please choose level ;)\nLight - 4 words and 10 chances (L) " +
+                Console.WriteLine("Hello! Please choose level ;)\nEasy - 4 words and 10 chances (E) " +
                                   "\nHard - 8 words and 15 chances (H)\n\n");
                 choice = Console.ReadLine();
 
-                if (choice == "l")
+                if (choice == "e" || choice == "E")
                 {
-                    Light light = new Light();
+                    Easy easy = new Easy();
                 }
 
-                else if (choice == "h")
+                else if (choice == "h" || choice == "H")
                 {
                     Hard hard = new Hard();
                 }

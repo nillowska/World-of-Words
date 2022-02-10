@@ -5,9 +5,9 @@ using System.IO;
 
 namespace World_of_Words
 {
-    public class Hard
+    public class Easy
     {
-        public Hard()
+        public Easy()
         {
             Console.Clear();
             DisplayInterface headerPhoto = new DisplayInterface();
@@ -16,7 +16,7 @@ namespace World_of_Words
 
             Random randWord = new Random();
 
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine(allWords[randWord.Next(allWords.Length)]);
 
