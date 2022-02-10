@@ -11,6 +11,7 @@ namespace World_of_Words
 
             string choice;
             string fileName = @"Words.txt";
+            string levelWords;
 
             if (File.Exists(fileName))
             {
@@ -18,6 +19,8 @@ namespace World_of_Words
                                   "\nHard - 8 words and 15 chances (H)\n\n");
                 choice = Console.ReadLine();
                 string choiceUpper = choice.ToUpper();
+
+
 
                 if (choiceUpper == "E")
                 {
